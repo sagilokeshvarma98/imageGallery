@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Fun Image Gallery</title>
+        <script src="../funFact/jquery-3.6.0.min.js"></script>
+        <script src="gallery.js"></script>
+        <link rel="stylesheet" href="gallery.css">
+    </head>
+    <body>
+        <p class="title">My Gallery</p>
+       <div id="normalDisplay">
+        <div id="gotFromJs">
+        </div>
+       </div>
+       <div id="galleryDisplay">
+           <div id="zoomdisplay" style="margin-bottom: 30px;">
+            <img id="leftarrow" onclick="leftImage()"  src="left arrow.png" alt="">
+            <img id="rightarrow" onclick="rightImage()" src="rightarrow.png" alt="">
+            <div id="close"  onclick="closeImage()"><b>x</b></div>
+            <img id="zoomImage" class="afterZoom"  src="" alt="">
+        </div>
+        <div id="displayGallery">
+        </div>
+       </div>
+    </body>
+</html>

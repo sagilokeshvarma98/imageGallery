@@ -1,0 +1,166 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.imageDiv{
+    float: left;
+}
+
+.title{
+    color: rgb(76, 36, 114);
+    top: 0%;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(167, 156, 156, 0.363);
+}
+
+#normalDisplay{
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+#normalDisplay img{
+    margin: 10px 20px;
+    height: 200px;
+    width: 250px;
+}
+
+#normalDisplay img:hover{
+   opacity: 0.5;
+}
+
+.imageDiv p{
+    color: chocolate;
+    text-align: center;
+}
+
+
+.disable-div {
+    pointer-events: none;
+    opacity: 0.2;
+}
+
+.able-div {
+    pointer-events: visible;
+    opacity: unset;
+}
+
+#leftarrow,#rightarrow{
+    height: 30px;
+    width: 30px;
+    position: fixed;
+}
+
+#leftarrow{
+    top: 34%;
+    left: 10px;
+    z-index: 2;
+}
+
+#rightarrow{
+    right: 10px;
+    top: 34%; 
+    z-index: 2;
+}
+
+#leftarrow:hover{
+    opacity: 0.5;  
+}
+
+#rightarrow:hover{
+    opacity: 0.5;
+} 
+
+#zoomdisplay{
+    margin-left: 32%;
+}
+
+#close{
+    top: 1%;
+    right: 8%;
+    color: rgb(172, 83, 83);
+    cursor: pointer;
+    font-size: 25px;
+    position: fixed;
+    z-index: 2;
+}
+
+#close:hover{
+    color: rgb(243, 43, 43);
+}
+
+#zoomdisplay .afterZoom{
+    top: 4%;
+    left: 32%;
+    position: fixed;
+    height: 400px;
+    width: 500px;
+}
+
+#displayGallery{
+    margin-top: 10px;
+    position: fixed;
+    bottom: 2%;
+    left: 10%;
+    right: 10%;
+}
+
+.scroll{
+    margin-left: 30px;
+    height: 180px;
+    width: 200px;
+}
+
+@media screen and (min-width:1440px) {
+    #displayGallery{
+        left: 20%;
+        bottom: 0%;
+    }
+}
+
+@media screen and (max-width:1440px) {
+  #displayGallery{
+      left: 15%;
+      bottom: 0%;
+  }
+}
+
+
+
+@media screen and (max-width:1261px) {
+    .scroll{
+        height: 130px;
+        width: 150px;
+    }
+    #displayGallery{
+        left: 15%;
+        bottom: 0%;
+    }
+    #zoomdisplay{
+        margin-left: 22%;
+    }
+}
+
+@media screen and (max-width:1041px) {
+    #displayGallery{
+        left: 10%;
+    }
+    #displayGallery{
+        margin-top: 10px;
+    }
+}
+  
+@media screen and (max-width:525px) {
+    .scroll{
+        height: 100px;
+        width: 130px;
+       margin-bottom: 10px;
+    }
+    #zoomdisplay .afterZoom{
+        height: 250px;
+        width: 300px;
+        top: 15%;
+    }
+}
+
